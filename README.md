@@ -1,3 +1,36 @@
+
+# Accompanying repository for "Enabling PERK on Resource-Constrained Devices" paper submission
+
+This repository contains the sources relative to the "Enabling PERK on Resource-Constrained Devices" paper submitted at TCHES.
+Sources are integrated in a fork of the pqm4 project. Below is the original pqm4 RREADME.
+
+Clone the repo with the `--recurse-submodules` git option.  
+See below the **pqm4** section all the prerequisite to run the benchmarks.
+
+
+The relevant surce code cited in the paper is under the following directories:
+
+- crypto_sign/perk-128-fast-3
+- crypto_sign/perk-128-fast-5
+- crypto_sign/perk-128-short-3
+- crypto_sign/perk-128-short-5
+- crypto_sign/perk-192-fast-3
+- crypto_sign/perk-192-fast-5
+- crypto_sign/perk-192-short-3
+- crypto_sign/perk-192-short-5
+- crypto_sign/perk-256-fast-3
+- crypto_sign/perk-256-fast-5
+- crypto_sign/perk-256-short-3
+- crypto_sign/perk-256-short-5
+
+benchmarks can be run with the following command:
+```
+./benchmarks.py perk-128-fast-3  perk-128-fast-5  perk-128-short-3 perk-128-short-5 perk-192-fast-3  perk-192-fast-5  perk-192-short-3 perk-192-short-5 perk-256-fast-3  perk-256-fast-5  perk-256-short-3 perk-256-short-5
+```
+
+
+### Below is the original pqm4 README
+
 # pqm4
 Collection of post-quantum cryptographic alrogithms for the ARM Cortex-M4
 
