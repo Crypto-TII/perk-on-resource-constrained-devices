@@ -27,6 +27,7 @@ def parse_arguments():
         "--no-aio", help="Disable all-in-one compilation", default=False, action="store_true"
     )
     parser.add_argument("-u", "--uart", default="/dev/ttyUSB0", help="Path to UART output")
+    parser.add_argument("-c", "--cfg", default="st_nucleo_l4r5.cfg", help="Path to openocd cfg file")
     parser.add_argument("-i", "--iterations", type=int, default=1, help="Number of iterations for benchmarks")
     return parser.parse_known_args()
 
@@ -38,7 +39,7 @@ def get_platform(args):
         platform = platforms.StLink(args.uart)
     elif args.platform == "nucleo-l4r5zi":
         bin_type = 'hex'
-        platform = platforms.OpenOCD("st_nucleo_l4r5.cfg", args.uart)
+        platform = platforms.OpenOCD(args.cfg, args.uart)
     elif args.platform in ["cw308t-stm32f3", "cw308t-stm32f415"]:
         bin_type = 'hex'
         platform = platforms.ChipWhisperer()
