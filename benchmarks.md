@@ -32,6 +32,22 @@
 ## Signature Schemes
 | Scheme | Implementation | Key Generation [bytes] | Sign [bytes] | Verify [bytes] |
 | ------ | -------------- | ---------------------- | ------------ | -------------- |
+| biscuit128f | ref | 600 | 137,240 | 14,560 |
+| biscuit128s | ref | 600 | 1,093,272 | 83,688 |
+| biscuit192f | ref | 640 | 265,856 | 20,688 |
+| biscuit192s | ref | 640 | 2,245,568 | 107,096 |
+| biscuit256f | ref | 720 | 477,360 | 33,000 |
+| biscuit256s | ref | 720 | 3,983,000 | 148,208 |
+| mqom_cat1_gf251_fast | ref | 184,292 | 399,396 | 252,588 |
+| mqom_cat1_gf251_short | ref | 184,292 | 665,348 | 379,884 |
+| mqom_cat1_gf31_fast | ref | 262,888 | 612,816 | 421,500 |
+| mqom_cat1_gf31_short | ref | 262,888 | 868,184 | 554,092 |
+| mqom_cat3_gf251_fast | ref | 680,972 | 1,284,468 | 822,332 |
+| mqom_cat3_gf251_short | ref | 680,972 | 1,884,604 | 1,143,716 |
+| mqom_cat3_gf31_fast | ref | 974,840 | 2,149,800 | 1,536,236 |
+| mqom_cat3_gf31_short | ref | 974,840 | 2,669,504 | 1,774,124 |
+| mqom_cat5_gf251_fast | ref | 1,702,348 | 3,222,220 | 2,165,908 |
+| mqom_cat5_gf251_short | ref | 1,702,348 | 4,115,548 | 2,537,332 |
 | perk-128-fast-3 | m4 | 7,696 | 24,020 | 20,684 |
 | perk-128-fast-3 | m4-ref | 7,696 | 313,364 | 313,236 |
 | perk-128-fast-3 | ref | 7,728 | 313,412 | 313,284 |
@@ -66,6 +82,22 @@
 ## Signature Schemes
 | Scheme | Implementation | .text [bytes] | .data [bytes] | .bss [bytes] | Total [bytes] |
 | ------ | -------------- | ------------- | ------------- | ------------ | ------------- |
+| biscuit128f | ref | 7,580 | 0 | 0 | 7,580 |
+| biscuit128s | ref | 7,696 | 0 | 0 | 7,696 |
+| biscuit192f | ref | 7,780 | 0 | 0 | 7,780 |
+| biscuit192s | ref | 7,904 | 0 | 0 | 7,904 |
+| biscuit256f | ref | 8,216 | 0 | 0 | 8,216 |
+| biscuit256s | ref | 8,248 | 0 | 0 | 8,248 |
+| mqom_cat1_gf251_fast | ref | 16,865 | 0 | 0 | 16,865 |
+| mqom_cat1_gf251_short | ref | 18,193 | 0 | 0 | 18,193 |
+| mqom_cat1_gf31_fast | ref | 23,718 | 0 | 0 | 23,718 |
+| mqom_cat1_gf31_short | ref | 23,510 | 0 | 0 | 23,510 |
+| mqom_cat3_gf251_fast | ref | 17,074 | 0 | 0 | 17,074 |
+| mqom_cat3_gf251_short | ref | 18,710 | 0 | 0 | 18,710 |
+| mqom_cat3_gf31_fast | ref | 23,881 | 0 | 0 | 23,881 |
+| mqom_cat3_gf31_short | ref | 24,025 | 0 | 0 | 24,025 |
+| mqom_cat5_gf251_fast | ref | 20,401 | 0 | 0 | 20,401 |
+| mqom_cat5_gf251_short | ref | 20,137 | 0 | 0 | 20,137 |
 | perk-128-fast-3 | m4 | 11,717 | 4 | 0 | 11,721 |
 | perk-128-fast-3 | m4-ref | 10,457 | 4 | 0 | 10,461 |
 | perk-128-fast-3 | ref | 11,053 | 4 | 0 | 11,057 |

@@ -23,11 +23,15 @@ The relevant surce code cited in the paper is under the following directories:
 - crypto_sign/perk-256-short-3
 - crypto_sign/perk-256-short-5
 
-benchmarks can be run with the following command:
+benchmarks for PERK can be run with the following command:
 ```
-./benchmarks.py perk-128-fast-3  perk-128-fast-5  perk-128-short-3 perk-128-short-5 perk-192-fast-3  perk-192-fast-5  perk-192-short-3 perk-192-short-5 perk-256-fast-3  perk-256-fast-5  perk-256-short-3 perk-256-short-5
+./benchmarks.py --nohashing -p nucleo-l4r5zi -u /dev/ttyACM0 perk-128-fast-3  perk-128-fast-5  perk-128-short-3 perk-128-short-5 perk-192-fast-3  perk-192-fast-5  perk-192-short-3 perk-192-short-5 perk-256-fast-3  perk-256-fast-5  perk-256-short-3 perk-256-short-5
 ```
 
+we got the stack evalution data for **mqom** and **biscuit** from the pqm4/mupq implementaions running on **qemu** with the following command
+```
+./benchmarks.py -i 1 -p mps2-an386 --nohashing --nospeed  mqom_cat1_gf251_fast  mqom_cat1_gf251_short mqom_cat1_gf31_fast   mqom_cat1_gf31_short  mqom_cat3_gf251_fast  mqom_cat3_gf251_short mqom_cat3_gf31_fast   mqom_cat3_gf31_short  mqom_cat5_gf251_fast  mqom_cat5_gf251_short biscuit128f biscuit128s biscuit192f biscuit192s biscuit256f biscuit256s
+```
 
 ### Below is the original pqm4 README
 
